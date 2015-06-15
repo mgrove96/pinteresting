@@ -4,8 +4,12 @@
 	<h1>
 		Welcome to Sunlit Grove!
 	</h1>
+	<% if user_signed_in? %>
+	Welcome to the VIP lounge, glad you could stop by!
+	<% else %>
 	<p>
-		<%= link_to "Log In!", "#", class: "btn btn-default btn-lg" %>
-	 	<%= link_to "Sign Up!", "#", class: "btn btn-primary btn-lg" %>
+		<%= link_to "Log In!", new_user_session_path, class: "btn btn-default btn-lg" %>
+	 	<%= link_to "Sign Up!", new_user_registration_path, class: "btn btn-primary btn-lg" %>
 	</p>
+	<% end %>
 </div>
