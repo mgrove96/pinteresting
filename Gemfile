@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.5.1'
 gem 'paperclip', '~> 4.2.3'
+gem 'aws-sdk', '< 2.0'
 
 group :production do
 	gem 'pg'
